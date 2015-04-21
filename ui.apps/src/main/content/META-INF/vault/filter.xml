@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-	<filter root="/apps/practice">
-		<exclude pattern="/apps/practice/install" />
-	</filter>
+	<filter root="/apps/practice"/>
+    <filter root="/apps/wcm" />
 	<filter root="/apps/sling" />
     <filter root="/etc/designs/practice"/>
+    <filter root="/etc/cloudservices/YoutubeService" />
 </workspaceFilter>

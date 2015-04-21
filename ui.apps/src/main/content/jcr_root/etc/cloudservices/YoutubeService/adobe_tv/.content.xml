@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2015-04-19T23:13:48.785+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/practice/templates/youtube"
+        jcr:lastModified="{Date}2015-04-19T23:13:48.782+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="adobe_tv"
+        sling:resourceType="practice/components/content/youtube"
+        customerkey="AIzaSyCaHJLm4MwG8o6_BupKc-7fuyhjb-v9pjw"
+        loginUrl="UC5YIPMZUFi9vObh3muCKE1A">
+        <youtubepolling
+            jcr:mixinTypes="[cq:PollConfig]"
+            jcr:primaryType="nt:unstructured"
+            feedType="uvideo"
+            feedUrl="/etc/cloudservices/YoutubeService/adobe_tv/jcr:content"
+            interval="{Long}300"
+            source="uvideo:/etc/cloudservices/YoutubeService/adobe_tv/jcr:content"
+            target="/content/dam/youtube-videos/adobe_tv"/>
+    </jcr:content>
+</jcr:root>

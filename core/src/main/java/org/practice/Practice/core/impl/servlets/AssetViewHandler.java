@@ -67,7 +67,7 @@ public class AssetViewHandler
 	  /*
 	   * If page doesn't tagged with specific youtube cloud service then adobe tv video will get display in CF.
 	   */
-        String cloudService="/etc/cloudservices/Youtube/adobe_tv";
+        String cloudService="/etc/cloudservices/YoutubeService/adobe_tv";
         String target="/content/dam/youtube-videos/adobe_tv";
         ParserCallback cb = new ParserCallback((TagManager)request.getResourceResolver().adaptTo(TagManager.class));
         GQL.parse(queryString, session, cb);
