@@ -53,15 +53,14 @@ The project comes with the auto-public repository configured. To setup the repos
 
     http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html
     
-    IG :
-    =============================================================
+ * IG
 
 Channel id : UC_qRtY65jW6cif0iynSeD7A
 Google key : AIzaSyCaHJLm4MwG8o6_BupKc-7fuyhjb-v9pjw
 Target Path : /content/dam/youtube-videos/ig
 
-adobe_tv
+* adobe_tv
 
-UC5YIPMZUFi9vObh3muCKE1A
+UC0AE_22J0kAo30yjasaeFqw
 AIzaSyCaHJLm4MwG8o6_BupKc-7fuyhjb-v9pjw
 /content/dam/youtube-videos/adobe_tv
