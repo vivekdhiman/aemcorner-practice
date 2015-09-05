@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                border="true"
+                title="Mobile">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <countryinfo
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Country Info"
+                        id="mtf"
+                        key="countryinfo"
+                        name="./countryinfo"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="multifieldpanel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <country
+                                    jcr:primaryType="cq:Widget"
+                                    allowBlank="{Boolean}false"
+                                    fieldLabel="Country"
+                                    key="country"
+                                    type="checkbox"
+                                    xtype="selection">
+                                    <listeners jcr:primaryType="nt:unstructured"/>
+                                </country>
+                                <test
+                                    jcr:primaryType="cq:Widget"
+                                    hidden="{Boolean}true"
+                                    xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            loadcontent="function(field,record,path){&#xa;&#x9;console.log(&quot;listener fired&quot;);&#xa;&#x9;var panel = CQ.Ext.getCmp('mtf');&#xa;&#x9;var textfields = panel.findByType('checkbox');&#xa;&#x9;console.log(textfields.length);&#xa;    for(var i=0;i&lt;textfields.length; i++){&#xa;    &#x9;console.log(textfields[i].checked);&#xa;    &#x9;&#xa;    }&#xa;}"/>
+                    </countryinfo>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                border="true"
+                title="Mobile">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <countryinfo
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Country Info"
+                        key="countryinfo"
+                        name="./countryinfo"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="multifieldpanel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <country
+                                    jcr:primaryType="cq:Widget"
+                                    allowBlank="{Boolean}false"
+                                    fieldLabel="Country"
+                                    key="country"
+                                    xtype="textfield"/>
+                                <states
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="States"
+                                    key="states"
+                                    orderable="true"
+                                    xtype="multifield">
+                                    <fieldConfig
+                                        jcr:primaryType="cq:Widget"
+                                        xtype="multifieldpanel">
+                                        <items jcr:primaryType="cq:WidgetCollection">
+                                            <state
+                                                jcr:primaryType="cq:Widget"
+                                                fieldLabel="State"
+                                                key="state"
+                                                xtype="textfield"/>
+                                            <cities
+                                                jcr:primaryType="cq:Widget"
+                                                fieldLabel="Cities"
+                                                key="cities"
+                                                orderable="true"
+                                                xtype="multifield">
+                                                <fieldConfig
+                                                    jcr:primaryType="cq:Widget"
+                                                    xtype="multifieldpanel">
+                                                    <items jcr:primaryType="cq:WidgetCollection">
+                                                        <city
+                                                            jcr:primaryType="cq:Widget"
+                                                            fieldLabel="City"
+                                                            key="city"
+                                                            xtype="pathfield"/>
+                                                    </items>
+                                                </fieldConfig>
+                                            </cities>
+                                        </items>
+                                    </fieldConfig>
+                                </states>
+                            </items>
+                        </fieldConfig>
+                    </countryinfo>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

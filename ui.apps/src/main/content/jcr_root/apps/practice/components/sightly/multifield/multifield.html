@@ -1,0 +1,25 @@
+<sly data-sly-test="${wcmmode.edit}">Country Information</sly>
+<sly data-sly-use.countryInfo="${'practice/components/clientlibs/convertToJson.js' @ fieldName = 'countryinfo',fieldValue = ''}">
+    <ul>
+        <sly data-sly-list.countryDetails="${countryInfo.listJson}">
+            <li> ${countryDetails.country}
+                <ul>
+                    <sly data-sly-use.stateInfo="${'/apps/sdsingtel/components/clientlibs/convertToJson.js' @ fieldName = '',fieldValue = countryDetails.states}">
+                        <sly data-sly-list.innerlistJson="${stateInfo.listJson}">
+                            <li> ${innerlistJson.state} </li>
+                            <sly data-sly-use.cityInfo="${'/apps/sdsingtel/components/clientlibs/convertToJson.js' @ fieldName = '',fieldValue = innerlistJson.cities}">
+                                <ul>
+                                    <sly data-sly-list.citylistJson="${cityInfo.listJson}">
+
+                                        <li>${citylistJson.city}</li>
+
+                                    </sly>
+                                </ul>
+                            </sly>
+                        </sly>
+                </ul>
+            </li>
+            </sly>
+
+    </ul>
+</sly>

@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:allowedTemplates="/apps/practice/templates/page"
         cq:designPath="/etc/designs/practice"
         cq:lastModified="{Date}2014-06-16T12:35:35.283+02:00"
         cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2015-09-05T20:55:05.926+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
         cq:template="/apps/practice/templates/homepage"
+        jcr:isCheckedOut="{Boolean}true"
         jcr:lastModified="{Date}2014-05-27T10:23:22.274+02:00"
         jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus,mix:versionable]"
         jcr:primaryType="nt:unstructured"
         jcr:title="Français"
+        jcr:uuid="d357a655-b191-4482-a474-b37feb72600a"
         sling:resourceType="practice/components/page/page-home">
         <par
             jcr:mixinTypes="[cq:LiveRelationship]"
