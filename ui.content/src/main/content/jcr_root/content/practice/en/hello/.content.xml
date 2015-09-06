@@ -9,7 +9,7 @@
         cq:lastReplicated="{Date}2015-09-05T20:55:05.794+05:30"
         cq:lastReplicatedBy="admin"
         cq:lastReplicationAction="Activate"
-        cq:template="/apps/practice/templates/page"
+        cq:template="/apps/practice/templates/page-home"
         jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
