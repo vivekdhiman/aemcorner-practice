@@ -1,6 +1,6 @@
 <%--
 
-  Test component.
+  Test component - TCS Commit.
 
   
 
